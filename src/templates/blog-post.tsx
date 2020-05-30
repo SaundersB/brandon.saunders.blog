@@ -28,7 +28,11 @@ export default function Template({ data }: TemplateInterface) {
         <div className="blog-post-container">
             <Header siteTitle={'Brandon Saunders Blog'}/>
             <Helmet title={`Your Blog Name - ${post.frontmatter.title}`}/>
-            <div className="blog-post">
+            <div className="blog-post"  style={{
+                maxWidth: 960,
+                padding: `1.45rem`,
+                margin: 'auto'
+            }}>
                 <h1>{post.frontmatter.title}</h1>
                 <div
                     className="blog-post-content"
