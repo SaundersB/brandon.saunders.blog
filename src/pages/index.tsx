@@ -11,7 +11,7 @@ export default function IndexPage({data}: IndexPageInterface)
     const { edges: posts } = data.allMarkdownRemark
     return (
         <div>
-            <Header/>
+            <Header siteTitle={'Brandon Saunders Blog'}/>
             <div className="blog-posts">
                 {posts
                     .filter(post => post.node.frontmatter.title.length > 0)

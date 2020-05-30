@@ -26,7 +26,7 @@ export default function Template({ data }: TemplateInterface) {
     const {markdownRemark: post} = data // data.markdownRemark holds your post data
     return (
         <div className="blog-post-container">
-            <Header/>
+            <Header siteTitle={'Brandon Saunders Blog'}/>
             <Helmet title={`Your Blog Name - ${post.frontmatter.title}`}/>
             <div className="blog-post">
                 <h1>{post.frontmatter.title}</h1>

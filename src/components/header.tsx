@@ -12,34 +12,35 @@ const Header = ({siteTitle}: HeaderInterface) => (
         style={{
             background: `steelblue`,
             marginBottom: `1.45rem`,
-            justifyContent: 'space-between'
         }}
     >
         <div style={{
             display: 'flex',
-            alignContent: 'center',
-            justifyContent: 'flex-end'
+            flexDirection: 'row',
+            justifyContent: 'space-between'
         }}>
-            <SocialMediaLinksComponent/>
-        </div>
-        <div
-            style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `1.45rem 1.0875rem`,
-            }}
-        >
-            <h1 style={{margin: 0}}>
-                <Link
-                    to="/"
-                    style={{
-                        color: `white`,
-                        textDecoration: `none`,
-                    }}
-                >
-                    {siteTitle}
-                </Link>
-            </h1>
+            <div
+                style={{
+                    maxWidth: 960,
+                    padding: `1.45rem`,
+                    display: 'flex',
+                    justifyContent: 'flex-start'
+                }}
+            >
+                <h1 style={{margin: 0}}>
+                    <Link
+                        to="/"
+                        style={{
+                            textDecoration: `none`,
+                        }}
+                    >
+                        {siteTitle}
+                    </Link>
+                </h1>
+            </div>
+            <div>
+                <SocialMediaLinksComponent/>
+            </div>
         </div>
     </header>
 )
