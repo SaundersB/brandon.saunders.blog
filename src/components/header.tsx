@@ -17,7 +17,8 @@ const Header = ({siteTitle}: HeaderInterface) => (
         <div style={{
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+            alignItems: 'center'
         }}>
             <div
                 style={{
@@ -38,7 +39,9 @@ const Header = ({siteTitle}: HeaderInterface) => (
                     </Link>
                 </h1>
             </div>
-            <div>
+            <div style={{
+                padding: `0.25rem`
+            }}>
                 <SocialMediaLinksComponent/>
             </div>
         </div>
