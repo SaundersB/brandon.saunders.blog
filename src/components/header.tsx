@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import SocialMediaLinksComponent from '@bit/saundersb.common.social-media-links-component';
 
 interface HeaderInterface {
     siteTitle: string
@@ -13,6 +14,7 @@ const Header = ({ siteTitle }: HeaderInterface) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <SocialMediaLinksComponent/>
     <div
       style={{
         margin: `0 auto`,
