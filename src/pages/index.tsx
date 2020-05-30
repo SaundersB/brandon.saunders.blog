@@ -16,6 +16,7 @@ export default function IndexPage({data}: IndexPageInterface)
             <div className="blog-posts" style={{
                 maxWidth: 960,
                 padding: `1.45rem`,
+                margin: 'auto'
             }}>
                 {posts
                     .filter(post => post.node.frontmatter.title.length > 0)
