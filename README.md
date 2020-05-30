@@ -2,7 +2,7 @@
 This repository holds my blog publicly for all to see.
 
 My intentions are to designate this place as a space 🔭 where I can share ideas and things I'm learning. It is my 
-hope that what I share will help other developers 🧑🏿‍💻🧑‍💻🧑🏻‍💻👩🏽‍💻 in their journey via learning new technologies ⚙️ or 
+hope that what I share will help other developers 🧑🏿‍💻‍🧑🏻‍💻👩🏽‍💻 in their journey via learning new technologies ⚙️ or 
 preventing frustration 😡.
 
 So stay tuned 🎶 for what I'm about to share 📤! 
