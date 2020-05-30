@@ -18,7 +18,11 @@ export const pageQuery = graphql`
     }
 `
 
-export default function Template({ data }) {
+interface TemplateInterface {
+    data: any
+}
+
+export default function Template({ data }: TemplateInterface) {
     const {markdownRemark: post} = data // data.markdownRemark holds your post data
     return (
         <div className="blog-post-container">

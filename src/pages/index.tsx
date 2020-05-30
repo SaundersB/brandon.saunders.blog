@@ -1,8 +1,12 @@
 import React from "react"
 import {graphql, Link} from "gatsby"
-import Header from '../components/header.js';
+import Header from '../components/header';
 
-export default function IndexPage({data})
+interface IndexPageInterface {
+    data: any
+}
+
+export default function IndexPage({data}: IndexPageInterface)
 {
     const { edges: posts } = data.allMarkdownRemark
     return (
