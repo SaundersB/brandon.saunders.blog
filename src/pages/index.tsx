@@ -1,6 +1,7 @@
 import React from "react"
 import {graphql, Link} from "gatsby"
 import Header from '../components/header';
+import "../components/layout.css";
 
 interface IndexPageInterface {
     data: any
@@ -12,7 +13,10 @@ export default function IndexPage({data}: IndexPageInterface)
     return (
         <div>
             <Header siteTitle={'Brandon Saunders Blog'}/>
-            <div className="blog-posts">
+            <div className="blog-posts" style={{
+                maxWidth: 960,
+                padding: `1.45rem`,
+            }}>
                 {posts
                     .filter(post => post.node.frontmatter.title.length > 0)
                     .map(({ node: post }) => {
