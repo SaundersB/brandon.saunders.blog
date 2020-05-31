@@ -7,9 +7,14 @@ interface IndexPageInterface {
     data: any
 }
 
+interface MarkdownInterface {
+    edges: any[]
+}
+
 export default function IndexPage({data}: IndexPageInterface)
 {
-    const { edges: posts } = data.allMarkdownRemark
+
+    const { edges: posts }: MarkdownInterface = data.allMarkdownRemark
     return (
         <div>
             <Header siteTitle={'Brandon Saunders Blog'}/>
